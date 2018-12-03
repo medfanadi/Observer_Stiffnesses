@@ -1,0 +1,5 @@
+[collision_1: "spido::rear_left_wheel::rear_left_wheel_collision"
+force: -976.839904785, collision_1: "spido::front_right_wheel::front_right_wheel_collision"
+force: -2885.25952148, collision_1: "spido::front_left_wheel::front_left_wheel_collision"
+force: -1308.72436523, collision_1: "spido::rear_right_wheel::rear_right_wheel_collision"
+force: -3368.56323242]

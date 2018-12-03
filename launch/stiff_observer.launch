@@ -1,0 +1,24 @@
+<launch>
+  <arg name="simulation_time" default="15"/>
+
+  <node name="stiffness_observer_node" pkg="stiffness_observer" type="LQR_cornneringStiff.py" output="screen">
+	<param name="simulation_time"  value ="$(arg simulation_time)"/>
+
+ </node>
+  <node	name="record_Node" pkg="stiffness_observer" type="record.py" output="screen">
+  	<param name="simulation_time"  value ="$(arg simulation_time)" />
+
+  </node>
+
+<node	name="record2_Node" pkg="stiffness_observer" type="Forces_record.py" output="screen">
+  	<param name="simulation_time"  value ="$(arg simulation_time)" />
+
+  </node>
+<node	name="trace_gsp" pkg="stiffness_observer" type="trace_gps.py" output="screen">
+  	<param name="simulation_time"  value ="$(arg simulation_time)" />
+
+  </node>
+
+
+
+</launch>
